@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contacts.MainPage">
+    <StackLayout Margin="20,80,20,0" >
+        <!---left, top right bottom-->
+        <Label Text="Enter Contact Details" Padding="0,0,0,20"/>
+        <Label Text="{Binding previewText}" />
+
+        <Entry x:Name="NameEntry" TextChanged="NameEntry_TextChanged" Placeholder="Name"/>
+        <Entry Placeholder="Last Name"/>
+        <Entry Placeholder="Email"/>
+        <Entry Placeholder="E-mail"/>
+        <Entry Placeholder="Phone"/>
+        <Entry Placeholder="Address"/>
+        <Button x:Name="saveButton" Text="Save" Clicked="SaveButton_Pressed" Margin="80,10,80,0"/>
+    </StackLayout>
+    
+</ContentPage>
+
+
+
+<!--<Label Text="Hello other syntax"/> -->
+<!--this is a way of shortening ui elements code. It means you don't need to have a closing tag. Just put the slash at the end of the first-->
