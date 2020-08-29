@@ -4,11 +4,23 @@ using Xamarin.Forms.Xaml;
 
 namespace Contacts {
   public partial class App : Application {
-    public App()
+
+    public static string FilePath;
+    //public App()
+    //{
+    //  InitializeComponent();
+
+    //  MainPage = new NavigationPage(new ContactsPage()); //This is the first page that appears
+
+    //}
+
+    public App(string path)
     {
       InitializeComponent();
 
-      MainPage = new MainPage();
+      MainPage = new NavigationPage(new ContactsPage()); //This is the first page that appears
+
+      FilePath = path;
     }
 
     protected override void OnStart()

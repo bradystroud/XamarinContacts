@@ -1,20 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Contacts.MainPage">
-    <StackLayout Margin="20,80,20,0" >
-        <!---left, top right bottom-->
-        <Label Text="Enter Contact Details" Padding="0,0,0,20"/>
-        <Label Text="{Binding previewText}" />
+             x:Class="Contacts.MainPage"
+             Title="Add Contact">
 
-        <Entry x:Name="NameEntry" TextChanged="NameEntry_TextChanged" Placeholder="Name"/>
-        <Entry Placeholder="Last Name"/>
-        <Entry Placeholder="Email"/>
-        <Entry Placeholder="E-mail"/>
-        <Entry Placeholder="Phone"/>
-        <Entry Placeholder="Address"/>
-        <Button x:Name="saveButton" Text="Save" Clicked="SaveButton_Pressed" Margin="80,10,80,0"/>
-    </StackLayout>
+    <ContentPage.ToolbarItems/>
+
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,80,20,0" BindingContext="MainPage">
+            <!---left, top right bottom-->
+            <Label Text="Enter Contact Details below: " Padding="0,0,0,20"/>
+            <!--<Label Text="{Binding previewText}" /> -->
+
+            <Entry x:Name="nameEntry" Placeholder="Name"/>
+            <Entry x:Name="lastNameEntry" Placeholder="Last Name"/>
+            <Entry x:Name="emailEntry" Placeholder="Email"/>
+            <Entry x:Name="phoneEntry" Placeholder="Phone" />
+            <Entry x:Name="addressEntry" Placeholder="Address"/>
+            <Button x:Name="saveButton" Text="Save" Clicked="SaveButton_Pressed" Margin="80,10,80,0"/>
+
+        </StackLayout>
+    </ContentPage.Content>
     
 </ContentPage>
 

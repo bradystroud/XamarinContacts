@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Contacts.Classes;
+using System;
 using Xamarin.Forms;
+using SQLite;
+using System.Diagnostics.Contracts;
 
 namespace Contacts {
   public partial class MainPage : ContentPage {
@@ -11,15 +14,25 @@ namespace Contacts {
     private void SaveButton_Pressed(object sender, EventArgs e)
     {
       Console.WriteLine("Save Button pressed");
-      Console.WriteLine(NameEntry.Text);
-    }
-
-    private void NameEntry_TextChanged(object sender, TextChangedEventArgs e)
-    {
-      BindingContext = this;
-
-      Console.WriteLine(NameEntry.Text);
-      string previewText = NameEntry.Text; //Trying to change the value of a label on the go
+      Contact contact = new Contact()
+      {
+        Name = nameEntry.Text,
+        LastName = lastNameEntry.Text,
+        Email = emailEntry.Text,
+        PhoneNumber = phoneEntry.Text,
+        Address = addressEntry.Text
+      };
+      using (SQLiteConnection conn = new SQLiteConnection(App.FilePath)) {
+        conn.CreateTable<Contact>();
+        int rowsAdded = conn.Insert(contact);
+        if(rowsAdded == 0)
+        {
+          Console.WriteLine("Unsuccessful row addition");
+        } else
+        {
+          Console.WriteLine("Success: " + rowsAdded.ToString());
+        }
+      }
     }
   }
 }

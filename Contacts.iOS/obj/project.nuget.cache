@@ -1,11 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "9PB4mh+jBjSUH05GwUiHG5KRw99rDBrzbm+6Dv9+ttmhBjiciPfqOVxsOaIP12bNOooSqJLxhOgFRfUP1LjJzg==",
+  "dgSpecHash": "MGHAq5JU9ivk/k6o1FOVirUYNiIbh9s5V/KbXhOagMenH9pm/bNCASxcmrmH4BtjsE4Ki72x1ABl0FMILSOTMw==",
   "success": true,
   "projectFilePath": "B:\\Development\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Brady Stroud\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.6.0.1141. Reference the package directly from the project to select a different version. \r\n Contacts.iOS -> Contacts -> Xamarin.Forms (>= 4.8.0.1269) \r\n Contacts.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }
