@@ -13,28 +13,36 @@ using Xamarin.Forms.Xaml;
 namespace Contacts {
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class ContactsPage : ContentPage {
-    public ContactsPage()
-    {
+    public ContactsPage() {
       InitializeComponent();
     }
 
-    private void NewContactToolbarItem_Clicked(object sender, EventArgs e)
-    {
+    private void NewContactToolbarItem_Clicked(object sender, EventArgs e) {
       Console.WriteLine("new pressed");
       Navigation.PushAsync(new MainPage());
     }
-    protected override void OnAppearing()
-    {
+    protected override void OnAppearing() {
       base.OnAppearing();
 
-      using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
-      {
+      using ( SQLiteConnection conn = new SQLiteConnection(App.FilePath) ) {
         conn.CreateTable<Contact>();
         var contacts = conn.Table<Contact>().ToList();
-        foreach (Contact contact in contacts)
-        {
-          Console.WriteLine(contact.Name);
-        }
+        List<string> contactsName = new List<string>();
+
+        contactsListView.ItemsSource = contacts;
+
+        //foreach ( Contact contact in contacts ) {
+        //  contactsName.Add(contact.Name);
+        //}
+
+        //contactsListView.ItemsSource = contactsName;
+      }
+    }
+
+    private void DeleteButton_Clicked(System.Object sender, System.EventArgs e, int Id) {
+      using ( SQLiteConnection conn = new SQLiteConnection(App.FilePath) ) {
+        conn.CreateTable<Contact>();
+        conn.Delete<Contact>(Id);
       }
     }
   }

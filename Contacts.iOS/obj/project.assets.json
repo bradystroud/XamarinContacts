@@ -1437,39 +1437,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brady Stroud\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/bradystroud/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\Development\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
+      "projectUniqueName": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts.iOS/Contacts.iOS.csproj",
       "projectName": "Contacts.iOS",
-      "projectPath": "B:\\Development\\Contacts\\Contacts.iOS\\Contacts.iOS.csproj",
-      "packagesPath": "C:\\Users\\Brady Stroud\\.nuget\\packages\\",
-      "outputPath": "B:\\Development\\Contacts\\Contacts.iOS\\obj\\",
+      "projectPath": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts.iOS/Contacts.iOS.csproj",
+      "packagesPath": "/Users/bradystroud/.nuget/packages/",
+      "outputPath": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Brady Stroud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/bradystroud/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "B:\\Development\\Contacts\\Contacts\\Contacts.csproj": {
-              "projectPath": "B:\\Development\\Contacts\\Contacts\\Contacts.csproj"
+            "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj": {
+              "projectPath": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj"
             }
           }
         }
@@ -1506,7 +1499,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.6.0.1141. Reference the package directly from the project to select a different version. \r\n Contacts.iOS -> Contacts -> Xamarin.Forms (>= 4.8.0.1269) \r\n Contacts.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
+      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1269 to 4.6.0.1141. Reference the package directly from the project to select a different version. \n Contacts.iOS -> Contacts -> Xamarin.Forms (>= 4.8.0.1269) \n Contacts.iOS -> Xamarin.Forms (>= 4.6.0.1141)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

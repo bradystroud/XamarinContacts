@@ -4,11 +4,31 @@
              x:Class="Contacts.ContactsPage"
              Title="Welcome page">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="New" Clicked="NewContactToolbarItem_Clicked"/>
+        <ToolbarItem Text="New"
+                     Clicked="NewContactToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <Label Text="Welcome to the contacts app!" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <!--<Button Text="Load Data" Clicked="LoadDataButton_Clicked"/>-->
+        <ListView x:Name="contactsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal"
+                                     Spacing="100" >
+                            <StackLayout>
+                                <Label Text="{Binding Name}"
+                                       Margin="16,0,0,0"/>
+                                <Label Text="{Binding Email}"
+                                       TextColor="Gray"
+                                       FontSize="Small"
+                                       Margin="16,0,0,0"/>
+                            </StackLayout>
+                            <Button Text="Delete"
+                                    Clicked="DeleteButton_Clicked"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

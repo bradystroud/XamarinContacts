@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "B:\\Development\\Contacts\\Contacts\\Contacts.csproj": {}
+    "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj": {}
   },
   "projects": {
-    "B:\\Development\\Contacts\\Contacts\\Contacts.csproj": {
+    "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\Development\\Contacts\\Contacts\\Contacts.csproj",
+        "projectUniqueName": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj",
         "projectName": "Contacts",
-        "projectPath": "B:\\Development\\Contacts\\Contacts\\Contacts.csproj",
-        "packagesPath": "C:\\Users\\Brady Stroud\\.nuget\\packages\\",
-        "outputPath": "B:\\Development\\Contacts\\Contacts\\obj\\",
+        "projectPath": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/Contacts.csproj",
+        "packagesPath": "/Users/bradystroud/.nuget/packages/",
+        "outputPath": "/Users/bradystroud/Development/MS stack/Xamarin/XamarinContacts/Contacts/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Brady Stroud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/bradystroud/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,7 +65,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }
