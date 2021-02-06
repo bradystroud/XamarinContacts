@@ -153,3 +153,6 @@ FakesAssemblies/
 /Components
 /packages
 *.userprefs
+# other
+.DS_Store
+
